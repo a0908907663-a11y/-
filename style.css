@@ -1,0 +1,463 @@
+/* =========================
+      الإعدادات العامة
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    width:100%;
+    height:100%;
+}
+
+body{
+
+    font-family:Tahoma, Arial, sans-serif;
+
+    direction:rtl;
+
+    text-align:center;
+
+    background:#f2f4f8;
+
+    color:#333;
+
+}
+
+
+/* =========================
+       صفحة تسجيل الدخول
+========================= */
+
+
+.login-body{
+
+    min-height:100vh;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#dff5e5,#f2f4f8);
+
+}
+
+
+
+.login-box{
+
+    width:95%;
+
+    max-width:750px;
+
+    min-height:80vh;
+
+    background:white;
+
+    padding:60px;
+
+    border-radius:35px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.18);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+
+
+.login-box h1{
+
+    color:#2E8B57;
+
+    font-size:clamp(28px,5vw,50px);
+
+    margin-bottom:40px;
+
+}
+
+
+
+.login-box h2{
+
+    font-size:clamp(25px,4vw,40px);
+
+    margin-bottom:35px;
+
+}
+
+
+
+.login-box input{
+
+    width:100%;
+
+    height:70px;
+
+    margin:15px 0;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    border:2px solid #ddd;
+
+    font-size:20px;
+
+}
+
+
+
+.login-box button{
+
+    width:80%;
+
+    height:70px;
+
+    margin:30px auto;
+
+    background:#2E8B57;
+
+    color:white;
+
+    border:none;
+
+    border-radius:18px;
+
+    font-size:25px;
+
+    cursor:pointer;
+
+}
+
+
+
+.login-box button:hover{
+
+    background:#236b43;
+
+}
+
+
+
+/* =========================
+          Header
+========================= */
+
+
+header{
+
+    background:#2E8B57;
+
+    color:white;
+
+    width:100%;
+
+    padding:30px 15px;
+
+}
+
+
+
+header h1{
+
+    font-size:clamp(25px,5vw,45px);
+
+}
+
+
+
+/* =========================
+          القائمة
+========================= */
+
+
+nav{
+
+    margin-top:25px;
+
+}
+
+
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin:10px 20px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+}
+
+
+
+nav a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+
+/* =========================
+        محتوى الصفحات
+========================= */
+
+
+.content{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:50px auto;
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+}
+
+
+
+.content h2{
+
+    color:#2E8B57;
+
+    font-size:35px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.content p{
+
+    font-size:22px;
+
+    line-height:2;
+
+}
+
+
+
+/* الصور */
+
+.content img{
+
+    width:80%;
+
+    max-width:500px;
+
+    border-radius:25px;
+
+    margin-top:30px;
+
+}
+
+
+
+/* =========================
+          الخدمات
+========================= */
+
+
+ul{
+
+    padding:0;
+
+}
+
+
+li{
+
+    list-style:none;
+
+    background:#e5f5e9;
+
+    width:90%;
+
+    margin:20px auto;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    font-size:22px;
+
+}
+
+
+
+/* =========================
+          الفوتر
+========================= */
+
+
+footer{
+
+    background:#2E8B57;
+
+    color:white;
+
+    padding:20px;
+
+    margin-top:50px;
+
+}
+
+
+
+/* =========================
+          الهاتف
+========================= */
+
+
+@media(max-width:600px){
+
+.login-box{
+
+    width:100%;
+
+    min-height:100vh;
+
+    border-radius:0;
+
+    padding:40px 25px;
+
+}
+
+
+
+.login-box h1{
+
+    font-size:28px;
+
+}
+
+
+
+.login-box input{
+
+    height:60px;
+
+    font-size:18px;
+
+}
+
+
+
+.login-box button{
+
+    width:90%;
+
+}
+
+
+
+nav a{
+
+    display:block;
+
+    margin:15px;
+
+}
+
+
+
+.content{
+
+    width:95%;
+
+    padding:25px 15px;
+
+}
+
+
+
+.content p{
+
+    font-size:18px;
+
+}
+
+
+
+li{
+
+    font-size:18px;
+
+}
+
+
+}
+
+
+
+/* =========================
+          التابلت
+========================= */
+
+
+@media(min-width:601px) and (max-width:1024px){
+
+.login-box{
+
+    max-width:650px;
+
+}
+
+
+.content{
+
+    width:85%;
+
+}
+
+}
+
+
+
+/* =========================
+          الكمبيوتر
+========================= */
+
+
+@media(min-width:1200px){
+
+.login-box{
+
+    max-width:800px;
+
+}
+
+
+.content{
+
+    max-width:1300px;
+
+}
+
+
+}

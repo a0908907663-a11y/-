@@ -1,0 +1,452 @@
+/* ===== Reset ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html,body{
+
+    width:100%;
+    min-height:100%;
+
+}
+
+
+body{
+
+    font-family:Tahoma, Arial, sans-serif;
+
+    direction:rtl;
+
+    text-align:center;
+
+    background:#f1f1f8;
+
+}
+
+
+/* =====================
+       LOGIN PAGE
+===================== */
+
+
+.login-box{
+
+    width:90%;
+
+    max-width:650px;
+
+    min-height:500px;
+
+    margin:60px auto;
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:35px;
+
+    box-shadow:0 10px 35px rgba(0,0,0,0.15);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+
+
+.login-box h1{
+
+    color:#2E8B57;
+
+    font-size:clamp(25px,5vw,40px);
+
+    margin-bottom:40px;
+
+}
+
+
+
+.login-box h2{
+
+    font-size:30px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+input{
+
+    width:100%;
+
+    height:65px;
+
+    margin:15px 0;
+
+    padding:15px;
+
+    border:1px solid #ccc;
+
+    border-radius:15px;
+
+    font-size:18px;
+
+}
+
+
+
+button{
+
+    width:70%;
+
+    height:65px;
+
+    margin:30px auto;
+
+    background:#2E8B57;
+
+    color:white;
+
+    border:none;
+
+    border-radius:15px;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+}
+
+
+
+button:hover{
+
+    background:#236b42;
+
+}
+
+
+
+/* =====================
+       HEADER
+===================== */
+
+
+header{
+
+    width:100%;
+
+    background:#2E8B57;
+
+    color:white;
+
+    padding:30px 15px;
+
+}
+
+
+
+header h1{
+
+    font-size:clamp(25px,4vw,40px);
+
+}
+
+
+
+/* =====================
+       NAVBAR
+===================== */
+
+
+nav{
+
+    margin-top:20px;
+
+}
+
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin:10px 20px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+}
+
+
+
+nav a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+
+/* =====================
+       CONTENT
+===================== */
+
+
+.content{
+
+    width:90%;
+
+    max-width:1100px;
+
+    margin:50px auto;
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+}
+
+
+
+.content h2{
+
+    color:#2E8B57;
+
+    font-size:35px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.content p{
+
+    font-size:22px;
+
+    line-height:2;
+
+}
+
+
+
+/* الصور */
+
+.content img{
+
+    width:80%;
+
+    max-width:450px;
+
+    border-radius:25px;
+
+}
+
+
+
+/* =====================
+       SERVICES
+===================== */
+
+
+ul{
+
+    padding:0;
+
+}
+
+
+li{
+
+    list-style:none;
+
+    background:#e8f5e9;
+
+    margin:20px auto;
+
+    padding:20px;
+
+    width:90%;
+
+    border-radius:20px;
+
+    font-size:22px;
+
+}
+
+
+
+/* =====================
+       FOOTER
+===================== */
+
+
+footer{
+
+    background:#2E8B57;
+
+    color:white;
+
+    padding:20px;
+
+    margin-top:50px;
+
+}
+
+
+
+/* =====================
+       MOBILE
+===================== */
+
+
+@media(max-width:600px){
+
+
+.login-box{
+
+    width:95%;
+
+    min-height:auto;
+
+    padding:35px 20px;
+
+    margin:30px auto;
+
+}
+
+
+.login-box h1{
+
+    font-size:26px;
+
+}
+
+
+.login-box h2{
+
+    font-size:24px;
+
+}
+
+
+input{
+
+    height:55px;
+
+}
+
+
+button{
+
+    width:90%;
+
+}
+
+
+header{
+
+    padding:20px 10px;
+
+}
+
+
+nav a{
+
+    display:block;
+
+    margin:15px;
+
+}
+
+
+.content{
+
+    width:95%;
+
+    padding:25px 15px;
+
+}
+
+
+.content p{
+
+    font-size:18px;
+
+}
+
+
+li{
+
+    font-size:18px;
+
+}
+
+
+}
+
+
+
+/* =====================
+       TABLET
+===================== */
+
+
+@media(min-width:601px) and (max-width:1024px){
+
+.content{
+
+    width:85%;
+
+}
+
+
+.login-box{
+
+    max-width:600px;
+
+}
+
+
+}
+
+
+
+/* =====================
+       LARGE SCREENS
+===================== */
+
+
+@media(min-width:1200px){
+
+
+.login-box{
+
+    max-width:700px;
+
+}
+
+
+.content{
+
+    max-width:1200px;
+
+}
+
+
+}

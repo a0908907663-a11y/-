@@ -1,0 +1,53 @@
+// ================================
+// رسالة ترحيب عند فتح الموقع
+// ================================
+
+window.onload = function () {
+    console.log("مرحباً بك في عيادة دكتورة أماني البيطرية");
+};
+
+// ================================
+// التحقق من تسجيل الدخول
+// ================================
+
+function login() {
+
+    let email = document.querySelector("input[type='email']").value;
+    let password = document.querySelector("input[type='password']").value;
+
+    if (email === "" || password === "") {
+        alert("يرجى إدخال البريد الإلكتروني وكلمة المرور.");
+        return false;
+    }
+
+    alert("تم تسجيل الدخول بنجاح.");
+
+    window.location.href = "home.html";
+
+    return false;
+}
+
+// ================================
+// إرسال رسالة من صفحة التواصل
+// ================================
+
+function sendMessage(event) {
+
+    event.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+
+    if (name === "" || email === "" || message === "") {
+
+        alert("يرجى تعبئة جميع الحقول.");
+
+        return;
+    }
+
+    alert("تم إرسال رسالتك بنجاح، شكراً لتواصلك معنا.");
+
+    document.getElementById("contactForm").reset();
+
+}

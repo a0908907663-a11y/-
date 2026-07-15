@@ -1,0 +1,127 @@
+// ================================
+// رسالة ترحيب عند فتح الموقع
+// ================================
+
+window.onload = function () {
+    console.log("مرحباً بك في عيادة دكتورة أماني البيطرية");
+};
+
+
+// ================================
+// إنشاء حساب جديد
+// ================================
+
+function register(event) {
+
+    event.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("registerEmail").value;
+    let password = document.getElementById("registerPassword").value;
+    let confirmPassword = document.getElementById("confirmPassword").value;
+
+
+    if(password !== confirmPassword){
+
+        alert("كلمتا المرور غير متطابقتين");
+        return;
+
+    }
+
+
+    localStorage.setItem("name", name);
+    localStorage.setItem("email", email);
+    localStorage.setItem("password", password);
+
+
+    alert("تم إنشاء الحساب بنجاح");
+
+
+    window.location.href = "index.html";
+
+}
+
+
+
+// ================================
+// تسجيل الدخول
+// ================================
+
+function login(event){
+
+    event.preventDefault();
+
+
+    let email = document.getElementById("email").value;
+
+    let password = document.getElementById("password").value;
+
+
+
+    let savedEmail = localStorage.getItem("email");
+
+    let savedPassword = localStorage.getItem("password");
+
+
+
+    if(email === savedEmail && password === savedPassword){
+
+
+        alert("تم تسجيل الدخول بنجاح");
+
+
+        window.location.href = "home.html";
+
+
+    }else{
+
+
+        alert("البريد الإلكتروني أو كلمة المرور غير صحيحة");
+
+
+    }
+
+
+}
+
+
+
+
+// ================================
+// إرسال رسالة التواصل
+// ================================
+
+function sendMessage(event){
+
+
+    event.preventDefault();
+
+
+    let name = document.getElementById("name").value;
+
+    let email = document.getElementById("email").value;
+
+    let message = document.getElementById("message").value;
+
+
+
+    if(name === "" || email === "" || message === ""){
+
+
+        alert("يرجى تعبئة جميع الحقول");
+
+        return;
+
+    }
+
+
+
+    alert("تم إرسال رسالتك بنجاح، شكرًا لتواصلك معنا");
+
+
+
+    document.getElementById("contactForm").reset();
+
+
+
+}
